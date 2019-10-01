@@ -1,0 +1,3 @@
+svm-train-gpu.exe -g 0.0078125 -c 32 SVM_train.txt
+svm-predict.exe SVM_Test.txt SVM_train.txt.model SVM_10000.out
+python grid.py -v 10 SVM_train.txt
